@@ -1,0 +1,252 @@
+/* *********************************************** */
+/* GENERAL REUSABLE COMPONENTS */
+/* ************************************************ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* border: 1px solid black; */
+}
+html {
+  /* font-size: 10px */
+  /* 10px / 16px - 0.6255% */
+  /* Percentage of user's browser font setting */
+  font-size: 62.5%;
+}
+body {
+  font-family:"Montserrat",san-serif;
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+  /* color: white; */
+}
+.container {
+  /* default unit is 1148px */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+/* HEADER SECTION */
+.myheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2937;
+  padding: 0rem 5.8rem;
+}
+.logo {
+  font-size: 2.4rem;
+  color: black;
+}
+
+.myheader {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 7%;
+  min-height: 5vh;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+.myheader,
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
+.nav-links a {
+  margin-left: 2rem;
+}
+.nav-links a:hover {
+  color: #8282e0;
+}
+
+/* Third Page Phone Split*/
+.third-page {
+  position: relative;
+  padding: 0% 10%;/
+}
+
+.product-text-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+}
+.phone-size {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.phone-title {
+  font-size: 2rem;
+}
+.pro-size {
+  text-align: right;
+}
+.max-size {
+  text-align: left;
+}
+.product-images {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img{
+  width: 100%;
+}
+.large-phone {
+  position: relative;
+  transform: translateX(40%) scale(0.8);
+  z-index: 1;
+}
+.small-phone {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-40%) scale(0.8);
+}
+.retina-line {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.first-page-text {
+  z-index: 2;
+  text-align: center;
+  padding-top: 10rem;
+ 
+}
+.first-page-title {
+  font-size: 1.5rem;
+}
+.first-page-subtitle {
+  font-size: 3rem;
+}
+
+.span {
+  font-size: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+.span:hover {
+  color:blue;
+  transition: ease-in-out;
+};
+.container {
+ max-width: 120rem;
+ margin: 0 auto;
+ padding: 0 3.2rem;
+}
+.second-heading {
+  font-size: 3rem;
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  overflow-x:scroll;
+  /* width:2vw; */
+  /* background: #000; */
+  padding: 0 20rem;
+  overflow: hidden;
+}
+/* .galleryS {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  overflow-x:scroll;
+  /* width:2vw; */
+  /* background: #000; */
+  /* padding: 0 20rem;
+  overflow: hidden;
+} */ */
+.gallerys .img{
+  width: 30%;
+}
+.gallery .img{
+  width: 30%;
+  /* background-color: green; */
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+/* Second Page */
+.second-page {
+  min-height: 50vh;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  background-color: white;
+} 
+
+.smoke-video {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+  z-index: 1;
+}
+.second-text {
+  padding: 5% 30%;
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 2;
+}
+.forth-box {
+  padding: 2rem 4rem;
+  background-color: rgb(31, 31, 203);
+  border-radius: 1rem;
+}
+.forth-page {
+  padding: 8rem;
+}
+.box-text {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: white;
+}
+.box-paragraph {
+  font-size: 1.6rem;
+  color: white;
+  margin-top:1rem;
+}
+.forth-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 15rem;
+}
+.btn {
+  padding: 1.5rem 3rem;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.btn:hover{
+  color: black;
+}
+.TheFooterSection {
+  height: 10rem;
+  background-color: black;
+}
+.footer-text {
+  color: white;
+  text-align: center;
+  font-size: 2.6rem;
+  padding-top: 4rem;
+}
